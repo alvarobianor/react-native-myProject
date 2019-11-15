@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Button, Alert} from 'react-native';
 import Simple from './components/simples';
+import ElementTT from './components/parOuImpar';
 
 export default function() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Olá Álvaro</Text>
-      <Simple />
+      <Simple texto="Eita pleura" />
+      <ElementTT number={0} />
       <Button title="Botão" onPress={() => Alert.alert('Botão Pressionado!')} />
     </View>
   );
